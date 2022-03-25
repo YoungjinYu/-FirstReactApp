@@ -20,7 +20,6 @@ function Header(props){
           </header>
 }
 
-
 function Nav(props){
   const lis = []
 

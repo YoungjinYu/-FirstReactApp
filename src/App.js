@@ -22,7 +22,6 @@ function Header(props){
 
 function Nav(props){
   const lis = []
-
   for(let i = 0; i < props.topics.length; i++){
       let t = props.topics[i];
       lis.push(<li key={t.id}>
@@ -32,7 +31,6 @@ function Nav(props){
         }}> {t.title} </a>
       </li>);
   }
-
   return <nav>
             <ol>
               {lis}
@@ -57,10 +55,8 @@ function Create(props){
 }
 
 function Update(props){
-
   const[title,setTitle] = useState(props.title);
   const[body,setBody] = useState(props.body);
-
   return <article>
     <h2>Update</h2>
     <form onSubmit={event=>{
